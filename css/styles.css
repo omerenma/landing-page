@@ -17,13 +17,13 @@ body {
     rgba(0, 13, 60, 1) 100%
   );
   margin: 0;
-  font-family: "Merriweather", serif;
+  font-family: 'Merriweather', serif;
   color: #fff;
 }
 
 /* Typeography General*/
 h1 {
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-size: 3em;
   margin: 2em 1rem;
 }
@@ -37,7 +37,7 @@ h1 {
 
 h2 {
   border-bottom: 1px solid #cc1;
-  font-family: "Oxygen", Sans-Serif;
+  font-family: 'Oxygen', Sans-Serif;
   font-size: 3em;
   color: #fff;
 }
@@ -135,7 +135,7 @@ section:nth-of-type(even) .landing__container {
 /* Note that background circles are created with psuedo elements before and after */
 /* Circles appear to be random do to use of :nth-of-type psuedo class */
 section:nth-of-type(odd) .landing__container::before {
-  content: "";
+  content: '';
   background: rgba(255, 255, 255, 0.187);
   position: absolute;
   z-index: -5;
@@ -147,7 +147,7 @@ section:nth-of-type(odd) .landing__container::before {
 }
 
 section:nth-of-type(even) .landing__container::before {
-  content: "";
+  content: '';
   background: rgb(255, 255, 255);
   background: linear-gradient(
     0deg,
@@ -166,7 +166,7 @@ section:nth-of-type(even) .landing__container::before {
 }
 
 section:nth-of-type(3n) .landing__container::after {
-  content: "";
+  content: '';
   background: rgb(255, 255, 255);
   background: linear-gradient(
     0deg,
@@ -185,7 +185,7 @@ section:nth-of-type(3n) .landing__container::after {
 }
 
 section:nth-of-type(3n + 1) .landing__container::after {
-  content: "";
+  content: '';
   background: rgb(255, 255, 255);
   background: linear-gradient(
     0deg,
@@ -259,4 +259,53 @@ section.your-active-class .landing__container::after {
 }
 #top:hover {
   background: #777;
+}
+#open {
+  text-transform: capitalize;
+  visibility: none;
+  color: red;
+  float: right;
+  margin-right: 10px;
+  display: none;
+}
+#close {
+  visibility: none;
+}
+.open {
+  visibility: visible;
+  color: red;
+}
+.close {
+  visibility: hidden;
+}
+.section_color {
+  color: green;
+}
+#top {
+  cursor: pointer;
+}
+#section1 {
+  background-color: green;
+}
+#section2 {
+  background-color: blueviolet;
+}
+#section3 {
+  background-color: brown;
+}
+#section4 {
+  background-color: purple;
+}
+.home {
+  background: green;
+  color: white;
+}
+.about {
+  background: green;
+}
+.services {
+  background: pink;
+}
+.contact {
+  background: purple;
 }

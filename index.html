@@ -8,6 +8,7 @@
   <!-- Load Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
   <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/media_query.css">
 </head>
 <body>
   <!-- HTML Follows BEM naming conventions 
@@ -16,6 +17,8 @@
     <nav class="navbar__menu">
       <!-- Navigation starts as empty UL that will be populated with JS -->
       <ul id="navbar__list"></ul>
+      <i class="fa fa-bars" aria-hidden="true" id="open"></i>
+      <i class="fa fa-times" aria-hidden="true" id="close"></i>
     </nav>
   </header>
   <main>
@@ -59,10 +62,11 @@
       </div>
     </section>
   </main>
-  <div id="top"><a href="#">Back-To-Top</div>
+  <div id="top"><a id="scrolTo">Back-To-Top</div>
   <footer class="page__footer">
     <p>&copy Kingsley</p>
   </footer>
+  <script src="https://use.fontawesome.com/0e254ad647.js"></script>
 <script src="./js/app.js"></script>
 </body>
 </html>
